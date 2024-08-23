@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supacars</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="shortcut icon" href="./dist/assets/icons/logo.svg" type="image/svg">
+</head>
+
+<body>
+    <!-- Header start -->
+    <header class="bg-secondary right-0 left-0 flex px-[64px] py-[40px] justify-between items-center z-20 absolute">
+        <img src="./dist/assets/icons/logo.svg" alt="supacars">
+
+        <ul class="ml-[364px] text-base flex flex-row gap-x-[72px]">
+            <li><a class="text-white base-hover" href="#home">Home</a></li>
+            <li><a class="text-white base-hover" href="#beli">Beli Mobil</a></li>
+            <li><a class="text-white base-hover" href="#jual">Jual Mobil</a></li>
+        </ul>
+
+        <div class="text-base signin-wrapper">
+            <ul class="flex flex-row gap-x-[24px]">
+                <li><a class="text-white base-hover" href="#signin">Sign in</a></li>
+                <li>
+                    <a class="text-white px-[32px] py-[18px] bg-primary rounded-full base-hover" href="#signup">
+                        Get Started
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Hero section start -->
+    <section id="home" class="bg-secondary px-[64px] h-screen overflow-y-hidden">
+        <div class="w-full h-[94px] z-20 absolute bottom-0 left-0 right-0 px-[64px]">
+            <div class="w-full h-full p-6 bg-white rounded-t-3xl">
+                <ul class="flex items-center w-full h-full gap-x-6">
+                    <li class="flex-grow border-r-2 border-[#EDEDED] p-3">
+                        <a href="#" class="hover text-[#5A5E63] font-bold text-base w-full base-hover">
+                            Merek Mobil
+                        </a>
+                    </li>
+                    <li class="flex-grow border-r-2 border-[#EDEDED] p-3">
+                        <a href="#" class="hover text-[#5A5E63] font-bold text-base w-full base-hover">
+                            Model Mobil
+                        </a>
+                    </li>
+                    <li class="flex-grow border-r-2 border-[#EDEDED] p-3">
+                        <a href="#" class="hover text-[#5A5E63] font-bold text-base w-full base-hover">
+                            Lokasi Penjual
+                        </a>
+                    </li>
+                    <li class="flex-grow p-3">
+                        <a href="#" class="hover text-[#5A5E63] font-bold text-base w-full base-hover">
+                            Range Harga
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <main class="flex items-center justify-between w-full h-full">
+            <div class="headline-wrapper w-[556px]">
+                <div
+                    class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 bg-white bg-opacity-10 mb-2 w-fit">
+                    <img src="./dist/assets/icons/verified.svg" alt="verified">
+                    <span class="text-xs">Situs jual beli mobil terpercaya</span>
+                </div>
+
+                <h1 class="text-[64px] text-white font-bold leading-tight mb-4">
+                    Jual beli mobil <br> di mana, dan kapan saja
+                </h1>
+
+                <img src="./dist/assets/icons/underline.svg" alt="">
+            </div>
+
+            <div class="flex flex-row items-center justify-center carousel-wrapper gap-x-10">
+                <div class="flex flex-col items-center gap-4">
+                    <div
+                        class="h-full w-[373px] absolute from-secondary via-transparent to-secondary bg-gradient-to-b from-20% via-40% z-10">
+                    </div>
+                    <div class="card-hero">
+                        <div
+                            class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 bg-[#E5E5E5] bg-opacity-30 backdrop-blur-md mt-2 ml-2 float-left w-fit">
+                            <img src="./dist/assets/icons/verified.svg" width="16" height="16" alt="verified">
+                            <span class="text-xs">Dealer Terverifikasi</span>
+                        </div>
+
+                        <img src="./dist/assets/imgs/bmwm4.png" class="mt-4 ml-4" alt="mercedez">
+
+                        <p class="w-2/3 mt-2 ml-4 text-lg font-medium leading-8 text-white clear-left">
+                            2018 BMW M4 3.0 Coupe Yellow Edition
+                        </p>
+                    </div>
+
+                    <div class="card-hero">
+                        <div
+                            class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 bg-[#E5E5E5] bg-opacity-30 backdrop-blur-md mt-2 ml-2 float-left w-fit">
+                            <img src="./dist/assets/icons/verified.svg" width="16" height="16" alt="verified">
+                            <span class="text-xs">Dealer Terverifikasi</span>
+                        </div>
+
+                        <img src="./dist/assets/imgs/mercedez-hero.png" class="absolute w-[385px] ml-4 mt-4"
+                            alt="mercedez">
+
+                        <p class="float-left text-white font-medium leading-8 text-lg ml-4 w-2/3 mt-[179px]">
+                            2020 Mercedes-Benz A-Class - Limited Edition
+                        </p>
+                    </div>
+
+                    <div class="card-hero">
+                        <div
+                            class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 bg-[#E5E5E5] bg-opacity-30 backdrop-blur-md mt-2 ml-2 float-left w-fit">
+                            <img src="./dist/assets/icons/verified.svg" width="16" height="16" alt="verified">
+                            <span class="text-xs">Dealer Terverifikasi</span>
+                        </div>
+
+                        <img src="./dist/assets/imgs/accord.png" class="mt-4 ml-4" alt="mercedez">
+
+                        <p class="w-2/3 mt-2 ml-4 text-lg font-medium leading-8 text-white clear-left">
+                            2018 BMW M4 3.0 Coupe Yellow Edition
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col arrow-wrapper gap-y-8">
+                    <div
+                        class="p-3 from-[#303136] to-[#1e2127] bg-gradient-to-t rounded-full cursor-pointer base-hover">
+                        <img src="./dist/assets/icons/arrow-up.svg" alt="arrowup">
+                    </div>
+
+                    <div
+                        class="p-3 from-[#303136] to-[#1e2127] bg-gradient-to-b rounded-full cursor-pointer base-hover">
+                        <img src="./dist/assets/icons/arrow-down.svg" alt="arrowd">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <!-- Hero section end -->
+
+
+    <!-- Section map start -->
+    <section id="map"></section>
+    <!-- Section map end -->
+
+</body>
+
+</html>
