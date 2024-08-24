@@ -22,3 +22,20 @@ body {
   overflow: visible;
   box-sizing: border-box;
 }
+
+.card {
+  width: 371px;
+  height: 387px;
+  background-color: #f7f7f8;
+  border-radius: 20px;
+  border: 1px solid #ededed;
+  position: relative;
+}
+
+.card-content {
+  background-color: white;
+  border-radius: 20px;
+  height: 342px;
+  position: relative;
+  width: 100%;
+}

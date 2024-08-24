@@ -11,13 +11,13 @@
 
 <body>
     <!-- Header start -->
-    <header class="bg-secondary right-0 left-0 flex px-[64px] py-[40px] justify-between items-center z-20 absolute">
+    <header class="bg-secondary right-0 left-0 flex px-16 py-[40px] justify-between items-center z-20 absolute">
         <img src="./dist/assets/icons/logo.svg" alt="supacars">
 
-        <ul class="ml-[364px] text-base flex flex-row gap-x-[72px]">
-            <li><a class="text-white base-hover" href="#home">Home</a></li>
-            <li><a class="text-white base-hover" href="#beli">Beli Mobil</a></li>
-            <li><a class="text-white base-hover" href="#jual">Jual Mobil</a></li>
+        <ul class="ml-[292px] mr-[148px] text-base flex flex-row gap-x-[72px]">
+            <li><a class="text-white base-hover" href="#">Home</a></li>
+            <li><a class="text-white base-hover" href="#">Beli Mobil</a></li>
+            <li><a class="text-white base-hover" href="#">Jual Mobil</a></li>
         </ul>
 
         <div class="text-base signin-wrapper">
@@ -34,21 +34,21 @@
     <!-- Header end -->
 
     <!-- Hero section start -->
-    <section id="home" class="bg-secondary px-[64px] h-screen overflow-y-hidden">
-        <div class="w-full h-[94px] z-20 absolute bottom-0 left-0 right-0 px-[64px]">
+    <section id="home" class="h-screen px-16 overflow-y-hidden bg-secondary">
+        <div class="w-full h-[94px] z-20 absolute bottom-0 left-0 right-0 px-16">
             <div class="w-full h-full p-6 bg-white rounded-t-3xl">
                 <ul class="flex items-center w-full h-full gap-x-6">
-                    <li class="flex-grow border-r-2 border-[#EDEDED] p-3">
+                    <li class="flex-grow border-r border-[#EDEDED] p-3">
                         <a href="#" class="hover text-[#5A5E63] font-bold text-base w-full base-hover">
                             Merek Mobil
                         </a>
                     </li>
-                    <li class="flex-grow border-r-2 border-[#EDEDED] p-3">
+                    <li class="flex-grow border-r border-[#EDEDED] p-3">
                         <a href="#" class="hover text-[#5A5E63] font-bold text-base w-full base-hover">
                             Model Mobil
                         </a>
                     </li>
-                    <li class="flex-grow border-r-2 border-[#EDEDED] p-3">
+                    <li class="flex-grow border-r border-[#EDEDED] p-3">
                         <a href="#" class="hover text-[#5A5E63] font-bold text-base w-full base-hover">
                             Lokasi Penjual
                         </a>
@@ -80,7 +80,7 @@
             <div class="flex flex-row items-center justify-center carousel-wrapper gap-x-10">
                 <div class="flex flex-col items-center gap-4">
                     <div
-                        class="h-full w-[373px] absolute from-secondary via-transparent to-secondary bg-gradient-to-b from-20% via-40% z-10">
+                        class="h-full w-[373px] absolute from-secondary via-transparent to-secondary bg-gradient-to-b from-25% via-40% z-10">
                     </div>
                     <div class="card-hero">
                         <div
@@ -89,9 +89,9 @@
                             <span class="text-xs">Dealer Terverifikasi</span>
                         </div>
 
-                        <img src="./dist/assets/imgs/bmwm4.png" class="mt-4 ml-4" alt="mercedez">
+                        <img src="./dist/assets/imgs/bmwm4.png" class="ml-4" alt="bmw">
 
-                        <p class="w-2/3 mt-2 ml-4 text-lg font-medium leading-8 text-white clear-left">
+                        <p class="w-2/3 pb-4 ml-4 text-lg font-medium leading-8 text-white clear-left">
                             2018 BMW M4 3.0 Coupe Yellow Edition
                         </p>
                     </div>
@@ -120,8 +120,8 @@
 
                         <img src="./dist/assets/imgs/accord.png" class="mt-4 ml-4" alt="mercedez">
 
-                        <p class="w-2/3 mt-2 ml-4 text-lg font-medium leading-8 text-white clear-left">
-                            2018 BMW M4 3.0 Coupe Yellow Edition
+                        <p class="w-2/3 pb-4 ml-4 text-lg font-medium leading-8 text-white clear-left">
+                            2019 Honda Accord Sport/1.5t
                         </p>
                     </div>
                 </div>
@@ -144,8 +144,408 @@
 
 
     <!-- Section map start -->
-    <section id="map"></section>
+    <section id="map" class="px-16">
+        <div class="w-full px-4 py-6 bg-black rounded-b-3xl h-[94px]">
+            <a class="flex items-center justify-center base-hover" href="#">
+                <span class="text-xl font-bold text-white">Cari mobil</span>
+                <img src="./dist/assets/icons/search.svg" class="p-[13px]" alt="searchicon">
+            </a>
+        </div>
+
+        <main
+            class="w-full h-[374px] bg-[url('./assets/icons/map-base.svg')] bg-cover bg-no-repeat bg-center mt-[120px] mb-[134px] flex justify-center items-center gap-[163px]">
+            <div class="text-wrapper">
+                <h1 class="font-semibold text-tertiary text-7xl">15K<span class="text-primary">+</span></h1>
+                <p class="text-[32px] text-[#8F9499]">Mobil Terjual</p>
+            </div>
+            <div class="text-wrapper">
+                <h1 class="font-semibold text-tertiary text-7xl">20K<span class="text-primary">+</span></h1>
+                <p class="text-[32px] text-[#8F9499]">Pelanggan</p>
+            </div>
+            <div class="text-wrapper">
+                <h1 class="font-semibold text-tertiary text-7xl">150<span class="text-primary">+</span></h1>
+                <p class="text-[32px] text-[#8F9499]">Brand</p>
+            </div>
+        </main>
+    </section>
     <!-- Section map end -->
+
+    <!-- Section makas start -->
+    <section id="mokas" class="px-16">
+        <div class="flex items-center justify-between w-full title-wrapper mb-[50px]">
+            <h1 class="text-[44px] font-bold text-tertiary">Mokas Terpopuler</h1>
+
+            <a href=""
+                class="flex items-center text-xl font-bold gap-x-3 rounded-full border py-5 max-h-[60px] px-10 border-[#E7E7E9] hover:bg-[#E7E7E9]">
+                <p>See all</p>
+                <img src="./dist/assets/icons/arrow-right.svg" alt="">
+            </a>
+        </div>
+
+        <div class="card-container mb-[120px] flex justify-start flex-wrap w-full gap-x-[19.5px] gap-y-9">
+            <div class="flex flex-col justify-between card">
+                <div class="card-content">
+                    <div
+                        class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 absolute bg-[#E5E5E5] bg-opacity-50 backdrop-blur-sm mt-2 ml-2 float-left w-fit">
+                        <img src="./dist/assets/icons/verifyblue.svg" alt="verified">
+                        <span class="text-xs text-[#2F313780]">Dealer Terverifikasi</span>
+                    </div>
+
+                    <div class="w-full px-4 pt-4 mb-6">
+                        <img src="./dist/assets/imgs/bmwm4.png" class="h-[179px]" alt="bmwm4">
+                    </div>
+
+                    <div class="flex items-start justify-between px-4 mb-3">
+                        <p class="w-[240px] text-lg font-medium leading-[31.5px] text-[#0E1015] clear-left">
+                            2018 BMW M4 3.0 Coupe Yellow Edition
+                        </p>
+
+                        <div class="bg-[#F7F7F8] p-[7px] rounded-full cursor-pointer base-hover">
+                            <img src="./dist/assets/icons/heart.svg" alt="favorite">
+                        </div>
+                    </div>
+
+                    <h2 class="text-[#0E1015] px-4 font-bold text-2xl pb-[19px]">
+                        <span class="opacity-50">Rp</span> 1,700,000,000
+                    </h2>
+                </div>
+
+                <div class="p-[6px] px-4 card-footer flex justify-between items-center w-full">
+                    <div class="flex items-center text-[#8F9499] text-[11px] font-medium gap-x-1">
+                        <img src="./dist/assets/icons/location.svg" alt="location">
+                        <span>Sudirman, Jakarta Pusat</span>
+                    </div>
+
+                    <a href="#"
+                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                        Negotiable
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-between card">
+                <div class="card-content">
+                    <div
+                        class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 absolute bg-[#E5E5E5] bg-opacity-50 backdrop-blur-sm mt-2 ml-2 float-left w-fit">
+                        <img src="./dist/assets/icons/verifyblue.svg" alt="verified">
+                        <span class="text-xs text-[#2F313780]">Dealer Terverifikasi</span>
+                    </div>
+
+                    <div class="w-full px-4 pt-4 mb-6">
+                        <img src="./dist/assets/imgs/mercedez.png" class="h-[179px]" alt="mercedez">
+                    </div>
+
+                    <div class="flex items-start justify-between px-4 mb-3">
+                        <p class="w-[240px] text-lg font-medium leading-[31px] text-[#0E1015] clear-left">
+                            2020 Mercedes-Benz A-Class - Limited Edition
+                        </p>
+
+                        <div class="bg-[#F7F7F8] p-[7px] rounded-full cursor-pointer base-hover">
+                            <img src="./dist/assets/icons/heart.svg" alt="favorite">
+                        </div>
+                    </div>
+
+                    <h2 class="text-[#0E1015] px-4 font-bold text-2xl pb-[19px]">
+                        <span class="opacity-50">Rp</span> 1,100,000,000
+                    </h2>
+                </div>
+
+                <div class="p-[6px] px-4 card-footer flex justify-between items-center w-full">
+                    <div class="flex items-center text-[#8F9499] text-[11px] font-medium gap-x-1">
+                        <img src="./dist/assets/icons/location.svg" alt="location">
+                        <span>Tebet, Jakarta Selatan</span>
+                    </div>
+
+                    <a href="#"
+                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                        Negotiable
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-between card">
+                <div class="card-content">
+                    <div
+                        class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 absolute bg-[#E5E5E5] bg-opacity-50 backdrop-blur-sm mt-2 ml-2 float-left w-fit">
+                        <img src="./dist/assets/icons/verifyblue.svg" alt="verified">
+                        <span class="text-xs text-[#2F313780]">Dealer Terverifikasi</span>
+                    </div>
+
+                    <div class="w-full px-4 pt-4 mb-6">
+                        <img src="./dist/assets/imgs/cherokee.png" class="h-[179px]" alt="cherokee">
+                    </div>
+
+                    <div class="flex items-start justify-between px-4 mb-3 ">
+                        <p class="w-[240px] text-lg font-medium leading-[31px] text-[#0E1015] clear-left">
+                            2017 Jeep Grand Cherokee 3.6 L Limited
+                        </p>
+
+                        <div class="bg-[#F7F7F8] p-[7px] rounded-full cursor-pointer base-hover">
+                            <img src="./dist/assets/icons/heart.svg" alt="favorite">
+                        </div>
+                    </div>
+
+                    <h2 class="text-[#0E1015] px-4 font-bold text-2xl pb-[19px]">
+                        <span class="opacity-50">Rp</span> 5,000,000,000
+                    </h2>
+                </div>
+
+                <div class="p-[6px] px-4 card-footer flex justify-between items-center w-full">
+                    <div class="flex items-center text-[#8F9499] text-[11px] font-medium gap-x-1">
+                        <img src="./dist/assets/icons/location.svg" alt="location">
+                        <span>Klender, Jakarta Timur</span>
+                    </div>
+
+                    <a href="#"
+                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                        Negotiable
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-between card">
+                <div class="card-content">
+                    <div
+                        class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 absolute bg-[#E5E5E5] bg-opacity-50 backdrop-blur-sm mt-2 ml-2 float-left w-fit">
+                        <img src="./dist/assets/icons/verifyblue.svg" alt="verified">
+                        <span class="text-xs text-[#2F313780]">Dealer Terverifikasi</span>
+                    </div>
+
+                    <div class="w-full px-4 pt-4 mb-6">
+                        <img src="./dist/assets/imgs/mercysuv.png" class="h-[179px]" alt="mercedez">
+                    </div>
+
+                    <div class="flex items-start justify-between px-4 mb-3">
+                        <p class="w-[240px] text-lg font-medium leading-[31px] text-[#0E1015] clear-left">
+                            2019 Mercedes-Benz GLC-Class - SUV
+                        </p>
+
+                        <div class="bg-[#F7F7F8] p-[7px] rounded-full cursor-pointer base-hover">
+                            <img src="./dist/assets/icons/heart.svg" alt="favorite">
+                        </div>
+                    </div>
+
+                    <h2 class="text-[#0E1015] px-4 font-bold text-2xl pb-[19px]">
+                        <span class="opacity-50">Rp</span> 2,700,000,000
+                    </h2>
+                </div>
+
+                <div class="p-[6px] px-4 card-footer flex justify-between items-center w-full">
+                    <div class="flex items-center text-[#8F9499] text-[11px] font-medium gap-x-1">
+                        <img src="./dist/assets/icons/location.svg" alt="location">
+                        <span>Pancoran, Jakarta Selatan</span>
+                    </div>
+
+                    <a href="#"
+                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                        Negotiable
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-between card">
+                <div class="card-content">
+                    <div
+                        class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 absolute bg-[#E5E5E5] bg-opacity-50 backdrop-blur-sm mt-2 ml-2 float-left w-fit">
+                        <img src="./dist/assets/icons/verifyblue.svg" alt="verified">
+                        <span class="text-xs text-[#2F313780]">Dealer Terverifikasi</span>
+                    </div>
+
+                    <div class="w-full px-4 pt-4 mb-6">
+                        <img src="./dist/assets/imgs/hyundai.png" class="h-[179px]" alt="hyundai">
+                    </div>
+
+                    <div class="flex items-start justify-between px-4 mb-3">
+                        <p class="w-[240px] text-lg font-medium leading-[31px] text-[#0E1015] clear-left">
+                            2018 Hyundai Tucson 2.0 XG CRDi - SUV - KM 20rb
+                        </p>
+
+                        <div class="bg-[#F7F7F8] p-[7px] rounded-full cursor-pointer base-hover">
+                            <img src="./dist/assets/icons/heart.svg" alt="favorite">
+                        </div>
+                    </div>
+
+                    <h2 class="text-[#0E1015] px-4 font-bold text-2xl pb-[19px]">
+                        <span class="opacity-50">Rp</span> 450,000,000
+                    </h2>
+                </div>
+
+                <div class="p-[6px] px-4 card-footer flex justify-between items-center w-full">
+                    <div class="flex items-center text-[#8F9499] text-[11px] font-medium gap-x-1">
+                        <img src="./dist/assets/icons/location.svg" alt="location">
+                        <span>SCBD, Jakarta Pusaat</span>
+                    </div>
+
+                    <a href="#"
+                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                        Negotiable
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-between card">
+                <div class="card-content">
+                    <div
+                        class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 absolute bg-[#E5E5E5] bg-opacity-50 backdrop-blur-sm mt-2 ml-2 float-left w-fit">
+                        <img src="./dist/assets/icons/verifyblue.svg" alt="verified">
+                        <span class="text-xs text-[#2F313780]">Dealer Terverifikasi</span>
+                    </div>
+
+                    <div class="w-full px-4 pt-4 mb-6">
+                        <img src="./dist/assets/imgs/bmwx6.png" class="h-[179px]" alt="bmwx6">
+                    </div>
+
+                    <div class="flex items-start justify-between px-4 mb-3">
+                        <p class="w-[240px] text-lg font-medium leading-[31px] text-[#0E1015] clear-left">
+                            2024 BMW X6 3.0 xDrive40i M Sport SUV
+                        </p>
+
+                        <div class="bg-[#F7F7F8] p-[7px] rounded-full cursor-pointer base-hover">
+                            <img src="./dist/assets/icons/heart.svg" alt="favorite">
+                        </div>
+                    </div>
+
+                    <h2 class="text-[#0E1015] px-4 font-bold text-2xl pb-[19px]">
+                        <span class="opacity-50">Rp</span> 900,000,000
+                    </h2>
+                </div>
+
+                <div class="p-[6px] px-4 card-footer flex justify-between items-center w-full">
+                    <div class="flex items-center text-[#8F9499] text-[11px] font-medium gap-x-1">
+                        <img src="./dist/assets/icons/location.svg" alt="location">
+                        <span>Senopati, Jakarta Selatan</span>
+                    </div>
+
+                    <a href="#"
+                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                        Negotiable
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-between card">
+                <div class="card-content">
+                    <div
+                        class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 absolute bg-[#E5E5E5] bg-opacity-50 backdrop-blur-sm mt-2 ml-2 float-left w-fit">
+                        <img src="./dist/assets/icons/verifyblue.svg" alt="verified">
+                        <span class="text-xs text-[#2F313780]">Dealer Terverifikasi</span>
+                    </div>
+
+                    <div class="w-full px-4 pt-4 mb-6">
+                        <img src="./dist/assets/imgs/mercygclass.png" class="h-[179px]" alt="gclass">
+                    </div>
+
+                    <div class="flex items-start justify-between px-4 mb-3">
+                        <p class="w-[240px] text-lg font-medium leading-[31px] text-[#0E1015] clear-left">
+                            2019 Mercedes-Benz G Class-Class - SUV
+                        </p>
+
+                        <div class="bg-[#F7F7F8] p-[7px] rounded-full cursor-pointer base-hover">
+                            <img src="./dist/assets/icons/heart.svg" alt="favorite">
+                        </div>
+                    </div>
+
+                    <h2 class="text-[#0E1015] px-4 font-bold text-2xl pb-[19px]">
+                        <span class="opacity-50">Rp</span> 4,900,000,000
+                    </h2>
+                </div>
+
+                <div class="p-[6px] px-4 card-footer flex justify-between items-center w-full">
+                    <div class="flex items-center text-[#8F9499] text-[11px] font-medium gap-x-1">
+                        <img src="./dist/assets/icons/location.svg" alt="location">
+                        <span>Menteng, Jakarta Selatan</span>
+                    </div>
+
+                    <a href="#"
+                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                        Negotiable
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-between card">
+                <div class="card-content">
+                    <div
+                        class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 absolute bg-[#E5E5E5] bg-opacity-50 backdrop-blur-sm mt-2 ml-2 float-left w-fit">
+                        <img src="./dist/assets/icons/verifyblue.svg" alt="verified">
+                        <span class="text-xs text-[#2F313780]">Dealer Terverifikasi</span>
+                    </div>
+
+                    <div class="w-full px-4 pt-4 mb-6">
+                        <img src="./dist/assets/imgs/accord.png" class="h-[179px]" alt="accord">
+                    </div>
+
+                    <div class="flex items-start justify-between px-4 mb-3">
+                        <p class="w-[240px] text-lg font-medium leading-[31px] text-[#0E1015] clear-left">
+                            2019 Honda Accord Sport/1.5t
+                        </p>
+
+                        <div class="bg-[#F7F7F8] p-[7px] rounded-full cursor-pointer base-hover">
+                            <img src="./dist/assets/icons/heart.svg" alt="favorite">
+                        </div>
+                    </div>
+
+                    <h2 class="text-[#0E1015] px-4 font-bold text-2xl pb-[19px]">
+                        <span class="opacity-50">Rp</span> 700,000,000
+                    </h2>
+                </div>
+
+                <div class="p-[6px] px-4 card-footer flex justify-between items-center w-full">
+                    <div class="flex items-center text-[#8F9499] text-[11px] font-medium gap-x-1">
+                        <img src="./dist/assets/icons/location.svg" alt="location">
+                        <span>Lenteng Agung, Jakarta Selatan</span>
+                    </div>
+
+                    <a href="#"
+                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                        Negotiable
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-between card">
+                <div class="card-content">
+                    <div
+                        class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 absolute bg-[#E5E5E5] bg-opacity-50 backdrop-blur-sm mt-2 ml-2 float-left w-fit">
+                        <img src="./dist/assets/icons/verifyblue.svg" alt="verified">
+                        <span class="text-xs text-[#2F313780]">Dealer Terverifikasi</span>
+                    </div>
+
+                    <div class="w-full px-4 pt-4 mb-6">
+                        <img src="./dist/assets/imgs/civic.png" class="h-[179px]" alt="civic">
+                    </div>
+
+                    <div class="flex items-start justify-between px-4 mb-3">
+                        <p class="w-[241px] text-lg font-medium leading-[31px] text-[#0E1015] clear-left">
+                            Honda Civic Type R Sedan - Red Edition
+                        </p>
+
+                        <div class="bg-[#F7F7F8] p-[7px] rounded-full cursor-pointer base-hover">
+                            <img src="./dist/assets/icons/heart.svg" alt="favorite">
+                        </div>
+                    </div>
+
+                    <h2 class="text-[#0E1015] px-4 font-bold text-2xl pb-[19px]">
+                        <span class="opacity-50">Rp</span> 1,400,000,000
+                    </h2>
+                </div>
+
+                <div class="p-[6px] px-4 card-footer flex justify-between items-center w-full">
+                    <div class="flex items-center text-[#8F9499] text-[11px] font-medium gap-x-1">
+                        <img src="./dist/assets/icons/location.svg" alt="location">
+                        <span>Matraman, Jakarta Selatan</span>
+                    </div>
+
+                    <a href="#"
+                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                        Negotiable
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Section makas end -->
 
 </body>
 
