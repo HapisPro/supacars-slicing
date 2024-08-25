@@ -11,7 +11,8 @@
 
 <body>
     <!-- Header start -->
-    <header class="bg-secondary right-0 left-0 flex px-16 py-[40px] justify-between items-center z-20 absolute">
+    <header
+        class="bg-secondary right-0 left-0 flex px-16 py-[40px] justify-between items-center z-20 absolute shadow-[0px_40px_40px_0px_#1A1C21]">
         <img src="./dist/assets/icons/logo.svg" alt="supacars">
 
         <ul class="ml-[292px] mr-[148px] text-base flex flex-row gap-x-[72px]">
@@ -35,7 +36,7 @@
 
     <!-- Hero section start -->
     <section id="home" class="h-screen px-16 overflow-y-hidden bg-secondary">
-        <div class="w-full h-[94px] z-20 absolute bottom-0 left-0 right-0 px-16">
+        <div class="w-full h-[94px] z-20 absolute bottom-0 left-0 right-0 px-16 shadow-[0px_-50px_40px_0px_#1A1C21]">
             <div class="w-full h-full p-6 bg-white rounded-t-3xl">
                 <ul class="flex items-center w-full h-full gap-x-6">
                     <li class="flex-grow border-r border-[#EDEDED] p-3">
@@ -79,9 +80,6 @@
 
             <div class="flex flex-row items-center justify-center carousel-wrapper gap-x-10">
                 <div class="flex flex-col items-center gap-4">
-                    <div
-                        class="h-full w-[373px] absolute from-secondary via-transparent to-secondary bg-gradient-to-b from-25% via-40% z-10">
-                    </div>
                     <div class="card-hero">
                         <div
                             class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 bg-[#E5E5E5] bg-opacity-30 backdrop-blur-md mt-2 ml-2 float-left w-fit">
@@ -547,6 +545,366 @@
     </section>
     <!-- Section makas end -->
 
+    <!-- Section dealer start -->
+    <section id="dealer" class="p-16 bg-[#090B0F]">
+        <div class="flex items-center justify-between w-full mb-12 title-wrapper">
+            <h1 class="text-[44px] font-bold text-white">Dealer resmi dekat anda</h1>
+
+            <a href=""
+                class="flex items-center text-xl font-bold gap-x-3 rounded-full border py-5 max-h-[60px] px-10 border-[#E7E7E9] hover:bg-[#ffffff24] text-white">
+                <p>See all</p>
+                <img src="./dist/assets/icons/arrow-right.svg" alt="">
+            </a>
+        </div>
+
+        <div
+            class="w-full h-[433px] rounded-[40px] bg-[url('./assets/imgs/Map.png')] bg-cover bg-no-repeat bg-center relative flex justify-center items-center mb-[153px]">
+            <form
+                class="form-wrapper bg-[#22242A] py-6 w-[700px] flex justify-between items-center gap-x-3 pr-6 pl-[40px] rounded-full absolute bottom-[-50px]">
+                <input type="text" placeholder="Cari dealer di map"
+                    class="bg-transparent text-2xl text-[#8F9498] outline-none border-none w-full">
+                <button class="bg-primary rounded-full p-[13px]">
+                    <img src="./dist/assets/icons/search.svg" alt="search">
+                </button>
+            </form>
+        </div>
+
+        <div class="card-wrapper flex items-center gap-x-[21px] justify-evenly">
+            <div class="card-dealer">
+                <div class="w-full mb-3 card-img">
+                    <img src="./dist/assets/imgs/hondadealer.png" class="m-auto" alt="hondadealer">
+                </div>
+
+                <div class="flex flex-col w-full mb-3 text-center gap-y-3">
+                    <h4 class="w-full text-white font-medium leading-[31.2px] text-xl">
+                        Honda Dealership
+                    </h4>
+
+                    <div class="flex items-center justify-center w-full text-center gap-x-2">
+                        <img src="./dist/assets/icons/location.svg" class="w-4 h-4" alt="location">
+                        <small class="text-[#8F9499] text-base font-normal">Bekasi</small>
+                    </div>
+                </div>
+
+                <a href="#"
+                    class="flex items-center justify-center w-full text-base font-bold gap-x-3 rounded-full border h-[50px] p-4 border-[#ededed37] hover:bg-[#ededed37] text-white">
+                    <p>Cek Dealer</p>
+                    <img src="./dist/assets/icons/arrow-right.svg" alt="">
+                </a>
+            </div>
+
+            <div class="card-dealer">
+                <div class="w-full mb-3 card-img">
+                    <img src="./dist/assets/imgs/bmwdealer.png" class="m-auto" alt="bmw">
+                </div>
+
+                <div class="flex flex-col w-full mb-3 text-center gap-y-3">
+                    <h4 class="w-full text-white font-medium leading-[31.2px] text-xl">
+                        BMW Dealership
+                    </h4>
+
+                    <div class="flex items-center justify-center w-full text-center gap-x-2">
+                        <img src="./dist/assets/icons/location.svg" class="w-4 h-4" alt="location">
+                        <small class="text-[#8F9499] text-base font-normal">Jakarta Timur</small>
+                    </div>
+                </div>
+
+                <a href="#"
+                    class="flex items-center justify-center w-full text-base font-bold gap-x-3 rounded-full border h-[50px] p-4 border-[#ededed37] hover:bg-[#ededed37] text-white">
+                    <p>Cek Dealer</p>
+                    <img src="./dist/assets/icons/arrow-right.svg" alt="">
+                </a>
+            </div>
+
+            <div class="card-dealer">
+                <div class="w-full mb-3 card-img">
+                    <img src="./dist/assets/imgs/hyundaidealer.png" class="m-auto" alt="hyundaidealer">
+                </div>
+
+                <div class="flex flex-col w-full mb-3 text-center gap-y-3">
+                    <h4 class="w-full text-white font-medium leading-[31.2px] text-xl">
+                        Hyundai Dealership
+                    </h4>
+
+                    <div class="flex items-center justify-center w-full text-center gap-x-2">
+                        <img src="./dist/assets/icons/location.svg" class="w-4 h-4" alt="location">
+                        <small class="text-[#8F9499] text-base font-normal">Jakarta Selatan</small>
+                    </div>
+                </div>
+
+                <a href="#"
+                    class="flex items-center justify-center w-full text-base font-bold gap-x-3 rounded-full border h-[50px] p-4 border-[#ededed37] hover:bg-[#ededed37] text-white">
+                    <p>Cek Dealer</p>
+                    <img src="./dist/assets/icons/arrow-right.svg" alt="">
+                </a>
+            </div>
+
+            <div class="card-dealer">
+                <div class="w-full mb-3 card-img">
+                    <img src="./dist/assets/imgs/forddealer.png" class="m-auto" alt="forddealer">
+                </div>
+
+                <div class="flex flex-col w-full mb-3 text-center gap-y-3">
+                    <h4 class="w-full text-white font-medium leading-[31.2px] text-xl">
+                        Ford Dealership
+                    </h4>
+
+                    <div class="flex items-center justify-center w-full text-center gap-x-2">
+                        <img src="./dist/assets/icons/location.svg" class="w-4 h-4" alt="location">
+                        <small class="text-[#8F9499] text-base font-normal">Jakarta Selatan</small>
+                    </div>
+                </div>
+
+                <a href="#"
+                    class="flex items-center justify-center w-full text-base font-bold gap-x-3 rounded-full border h-[50px] p-4 border-[#ededed37] hover:bg-[#ededed37] text-white">
+                    <p>Cek Dealer</p>
+                    <img src="./dist/assets/icons/arrow-right.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Section dealer end -->
+
+    <!-- Section rekomendasi start -->
+    <section id="rekomendasi" class="my-[120px] pl-16">
+        <div class="flex items-center justify-between w-full pr-16 title-wrapper mb-9">
+            <h1 class="text-[44px] font-bold text-tertiary">Rekomendasi mobil baru</h1>
+
+            <div class="flex gap-x-[32px] justify-between items-center ">
+                <a href=""
+                    class="flex items-center text-xl font-bold gap-x-3 rounded-full border py-5 max-h-[60px] px-10 border-[#E7E7E9] hover:bg-[#E7E7E9]">
+                    <p>See all</p>
+                    <img src="./dist/assets/icons/arrow-right.svg" alt="arrow">
+                </a>
+
+                <div class="flex gap-x-[33px]">
+                    <div class="p-3 bg-[#2F313714] rounded-full cursor-pointer base-hover w-fit">
+                        <img src="./dist/assets/icons/arrow-left.svg" alt="arrowleft">
+                    </div>
+
+                    <div class="p-3 rounded-full cursor-pointer bg-primary base-hover w-fit">
+                        <img src="./dist/assets/icons/arrow-right2.svg" alt="arrowright">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="overflow-x-scroll no-scrollbar cursor-grab">
+            <div class="grid grid-flow-col grid-cols-4 gap-x-[21px] w-[1547px]">
+                <div class="flex flex-col justify-between card">
+                    <div class="card-content">
+                        <div
+                            class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 absolute bg-[#E5E5E5] bg-opacity-50 backdrop-blur-sm mt-2 ml-2 float-left w-fit">
+                            <img src="./dist/assets/icons/verifyblue.svg" alt="verified">
+                            <span class="text-xs text-[#2F313780]">Dealer Terverifikasi</span>
+                        </div>
+
+                        <div class="w-full px-4 pt-4 mb-6">
+                            <img src="./dist/assets/imgs/mercedez.png" class="h-[179px]" alt="mercedez">
+                        </div>
+
+                        <div class="flex items-start justify-between px-4 mb-3">
+                            <p class="w-[240px] text-lg font-medium leading-[31px] text-[#0E1015] clear-left">
+                                2020 Mercedes-Benz A-Class - Limited Edition
+                            </p>
+
+                            <div class="bg-[#F7F7F8] p-[7px] rounded-full cursor-pointer base-hover">
+                                <img src="./dist/assets/icons/heart.svg" alt="favorite">
+                            </div>
+                        </div>
+
+                        <h2 class="text-[#0E1015] px-4 font-bold text-2xl pb-[19px]">
+                            <span class="opacity-50">Rp</span> 1,100,000,000
+                        </h2>
+                    </div>
+
+                    <div class="p-[6px] px-4 card-footer flex justify-between items-center w-full">
+                        <div class="flex items-center text-[#8F9499] text-[11px] font-medium gap-x-1">
+                            <img src="./dist/assets/icons/location.svg" alt="location">
+                            <span>Tebet, Jakarta Selatan</span>
+                        </div>
+
+                        <a href="#"
+                            class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                            Negotiable
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-between card">
+                    <div class="card-content">
+                        <div
+                            class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 absolute bg-[#E5E5E5] bg-opacity-50 backdrop-blur-sm mt-2 ml-2 float-left w-fit">
+                            <img src="./dist/assets/icons/verifyblue.svg" alt="verified">
+                            <span class="text-xs text-[#2F313780]">Dealer Terverifikasi</span>
+                        </div>
+
+                        <div class="w-full px-4 pt-4 mb-6">
+                            <img src="./dist/assets/imgs/mercygclass.png" class="h-[179px]" alt="gclass">
+                        </div>
+
+                        <div class="flex items-start justify-between px-4 mb-3">
+                            <p class="w-[240px] text-lg font-medium leading-[31px] text-[#0E1015] clear-left">
+                                2019 Mercedes-Benz G Class-Class - SUV
+                            </p>
+
+                            <div class="bg-[#F7F7F8] p-[7px] rounded-full cursor-pointer base-hover">
+                                <img src="./dist/assets/icons/heart.svg" alt="favorite">
+                            </div>
+                        </div>
+
+                        <h2 class="text-[#0E1015] px-4 font-bold text-2xl pb-[19px]">
+                            <span class="opacity-50">Rp</span> 4,900,000,000
+                        </h2>
+                    </div>
+
+                    <div class="p-[6px] px-4 card-footer flex justify-between items-center w-full">
+                        <div class="flex items-center text-[#8F9499] text-[11px] font-medium gap-x-1">
+                            <img src="./dist/assets/icons/location.svg" alt="location">
+                            <span>Menteng, Jakarta Selatan</span>
+                        </div>
+
+                        <a href="#"
+                            class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                            Negotiable
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-between card">
+                    <div class="card-content">
+                        <div
+                            class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 absolute bg-[#E5E5E5] bg-opacity-50 backdrop-blur-sm mt-2 ml-2 float-left w-fit">
+                            <img src="./dist/assets/icons/verifyblue.svg" alt="verified">
+                            <span class="text-xs text-[#2F313780]">Dealer Terverifikasi</span>
+                        </div>
+
+                        <div class="w-full px-4 pt-4 mb-6">
+                            <img src="./dist/assets/imgs/bmwx6.png" class="h-[179px]" alt="bmwx6">
+                        </div>
+
+                        <div class="flex items-start justify-between px-4 mb-3">
+                            <p class="w-[240px] text-lg font-medium leading-[31px] text-[#0E1015] clear-left">
+                                2024 BMW X6 3.0 xDrive40i M Sport SUV
+                            </p>
+
+                            <div class="bg-[#F7F7F8] p-[7px] rounded-full cursor-pointer base-hover">
+                                <img src="./dist/assets/icons/heart.svg" alt="favorite">
+                            </div>
+                        </div>
+
+                        <h2 class="text-[#0E1015] px-4 font-bold text-2xl pb-[19px]">
+                            <span class="opacity-50">Rp</span> 900,000,000
+                        </h2>
+                    </div>
+
+                    <div class="p-[6px] px-4 card-footer flex justify-between items-center w-full">
+                        <div class="flex items-center text-[#8F9499] text-[11px] font-medium gap-x-1">
+                            <img src="./dist/assets/icons/location.svg" alt="location">
+                            <span>Senopati, Jakarta Selatan</span>
+                        </div>
+
+                        <a href="#"
+                            class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                            Negotiable
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-between card">
+                    <div class="card-content">
+                        <div
+                            class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 absolute bg-[#E5E5E5] bg-opacity-50 backdrop-blur-sm mt-2 ml-2 float-left w-fit">
+                            <img src="./dist/assets/icons/verifyblue.svg" alt="verified">
+                            <span class="text-xs text-[#2F313780]">Dealer Terverifikasi</span>
+                        </div>
+
+                        <div class="w-full px-4 pt-4 mb-6">
+                            <img src="./dist/assets/imgs/bmwm4.png" class="h-[179px]" alt="bmwm4">
+                        </div>
+
+                        <div class="flex items-start justify-between px-4 mb-3">
+                            <p class="w-[240px] text-lg font-medium leading-[31.5px] text-[#0E1015] clear-left">
+                                2018 BMW M4 3.0 Coupe Yellow Edition
+                            </p>
+
+                            <div class="bg-[#F7F7F8] p-[7px] rounded-full cursor-pointer base-hover">
+                                <img src="./dist/assets/icons/heart.svg" alt="favorite">
+                            </div>
+                        </div>
+
+                        <h2 class="text-[#0E1015] px-4 font-bold text-2xl pb-[19px]">
+                            <span class="opacity-50">Rp</span> 1,700,000,000
+                        </h2>
+                    </div>
+
+                    <div class="p-[6px] px-4 card-footer flex justify-between items-center w-full">
+                        <div class="flex items-center text-[#8F9499] text-[11px] font-medium gap-x-1">
+                            <img src="./dist/assets/icons/location.svg" alt="location">
+                            <span>Sudirman, Jakarta Pusat</span>
+                        </div>
+
+                        <a href="#"
+                            class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                            Negotiable
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section rekomendasi end -->
+
+    <!-- Footer start -->
+    <footer class="px-16 pt-[62px] border-[#F2F2F2] border-t h-[422px]">
+        <div class="w-[574px] float-left mr-[114px]">
+            <h2 class="text-tertiary text-[64px] font-extrabold tracking-[-1.28px] mb-6 leading-normal">Supacars</h2>
+            <p class="w-[574px] text-[#595959] font-normal text-base mb-[25px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fermentum ultricies nunc at
+                tempor. Donec et nibh commodo risus pretium hendrerit ut vitae mi. Curabitur tincidunt nibh non purus
+                condimentum laoreet. Cras vel laoreet sem. Donec ultricies justo ut orci tincidunt euismod. Sed auctor
+                nec lacus nec viverra.
+            </p>
+
+            <div class="flex items-center gap-x-6">
+                <div class="flex items-center gap-x-3">
+                    <img src="./dist/assets/icons/location-stroke.svg" alt="location">
+                    <span class="text-[#595959] font-normal text-base tracking-[-0.32px]">Jakarta Selatan,
+                        Indonesia</span>
+                </div>
+
+                <div class="flex items-center gap-x-3">
+                    <img src="./dist/assets/icons/call.svg" alt="contact">
+                    <span class="text-[#595959] font-normal text-base tracking-[-0.32px]">+62 0876-3456-3212</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="float-left w-fit mr-[134px]">
+            <h4 class="text-secondary text-2xl font-bold tracking-[-0.48px] leading-[22px] mb-6">
+                Parkir
+            </h4>
+            <ul class="flex flex-col gap-y-3">
+                <li><a href="#" class="text-[#7f7f7f] text-base font-normal base-hover">Sign in</a></li>
+                <li><a href="#" class="text-[#7f7f7f] text-base font-normal base-hover">Sign up</a></li>
+                <li><a href="#" class="text-[#7f7f7f] text-base font-normal base-hover">Categories</a></li>
+                <li><a href="#" class="text-[#7f7f7f] text-base font-normal base-hover">Guide</a></li>
+            </ul>
+        </div>
+
+        <div class="float-left w-fit">
+            <h4 class="text-secondary text-2xl font-bold tracking-[-0.48px] leading-[22px] mb-6">
+                Company
+            </h4>
+            <ul class="flex flex-col gap-y-3">
+                <li><a href="#" class="text-[#7f7f7f] text-base font-normal base-hover">About us</a></li>
+                <li><a href="#" class="text-[#7f7f7f] text-base font-normal base-hover">Press</a></li>
+                <li><a href="#" class="text-[#7f7f7f] text-base font-normal base-hover">Security</a></li>
+                <li><a href="#" class="text-[#7f7f7f] text-base font-normal base-hover">Legal</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Footer end -->
 </body>
 
 </html>
