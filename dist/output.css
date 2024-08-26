@@ -782,10 +782,6 @@ video {
   flex-grow: 1;
 }
 
-.cursor-grab{
-  cursor: grab;
-}
-
 .cursor-pointer{
   cursor: pointer;
 }
@@ -955,6 +951,10 @@ video {
   border-style: none;
 }
 
+.border-\[\#E7E7E937\]{
+  border-color: #E7E7E937;
+}
+
 .border-\[\#E7E7E9\]{
   --tw-border-opacity: 1;
   border-color: rgb(231 231 233 / var(--tw-border-opacity));
@@ -968,10 +968,6 @@ video {
 .border-\[\#F2F2F2\]{
   --tw-border-opacity: 1;
   border-color: rgb(242 242 242 / var(--tw-border-opacity));
-}
-
-.border-\[\#ededed37\]{
-  border-color: #ededed37;
 }
 
 .border-primary{
@@ -1391,12 +1387,24 @@ video {
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-200{
+  transition-duration: 200ms;
+}
+
 body {
   font-family: "Inter";
 }
 
 .base-hover:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .card-hero {
@@ -1452,17 +1460,8 @@ body {
   scrollbar-width: none;
 }
 
-.hover\:bg-\[\#E7E7E9\]:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(231 231 233 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[\#ededed37\]:hover{
-  background-color: #ededed37;
-}
-
-.hover\:bg-\[\#ffffff24\]:hover{
-  background-color: #ffffff24;
+.hover\:bg-\[\#E7E7E937\]:hover{
+  background-color: #E7E7E937;
 }
 
 .hover\:bg-primary:hover{

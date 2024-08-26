@@ -21,7 +21,7 @@
             <li><a class="text-white base-hover" href="#">Jual Mobil</a></li>
         </ul>
 
-        <div class="text-base signin-wrapper">
+        <div class="text-base">
             <ul class="flex flex-row gap-x-[24px]">
                 <li><a class="text-white base-hover" href="#signin">Sign in</a></li>
                 <li>
@@ -36,6 +36,7 @@
 
     <!-- Hero section start -->
     <section id="home" class="h-screen px-16 overflow-y-hidden bg-secondary">
+        <!-- Bottom bar start -->
         <div class="w-full h-[94px] z-20 absolute bottom-0 left-0 right-0 px-16 shadow-[0px_-50px_40px_0px_#1A1C21]">
             <div class="w-full h-full p-6 bg-white rounded-t-3xl">
                 <ul class="flex items-center w-full h-full gap-x-6">
@@ -62,9 +63,11 @@
                 </ul>
             </div>
         </div>
+        <!-- Bottom bar end -->
 
-        <main class="flex items-center justify-between w-full h-full">
-            <div class="headline-wrapper w-[556px]">
+        <!-- Hero content start -->
+        <div class="flex items-center justify-between w-full h-full">
+            <div class="w-[556px]">
                 <div
                     class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 bg-white bg-opacity-10 mb-2 w-fit">
                     <img src="./dist/assets/icons/verified.svg" alt="verified">
@@ -78,16 +81,18 @@
                 <img src="./dist/assets/icons/underline.svg" alt="">
             </div>
 
-            <div class="flex flex-row items-center justify-center carousel-wrapper gap-x-10">
+            <div class="flex flex-row items-center justify-center gap-x-10">
                 <div class="flex flex-col items-center gap-4">
                     <div class="card-hero">
                         <div
-                            class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 bg-[#E5E5E5] bg-opacity-30 backdrop-blur-md mt-2 ml-2 float-left w-fit">
+                            class="rounded-full p-[8px] flex text-white justify-items-center items-center absolute gap-x-2 bg-[#E5E5E5] bg-opacity-30 backdrop-blur-md mt-2 ml-2 float-left w-fit">
                             <img src="./dist/assets/icons/verified.svg" width="16" height="16" alt="verified">
                             <span class="text-xs">Dealer Terverifikasi</span>
                         </div>
 
-                        <img src="./dist/assets/imgs/bmwm4.png" class="ml-4" alt="bmw">
+                        <div class="w-full px-4 pt-4 mb-6">
+                            <img src="./dist/assets/imgs/bmwm4.png" class="h-[179px]" alt="bmwm4">
+                        </div>
 
                         <p class="w-2/3 pb-4 ml-4 text-lg font-medium leading-8 text-white clear-left">
                             2018 BMW M4 3.0 Coupe Yellow Edition
@@ -96,7 +101,7 @@
 
                     <div class="card-hero">
                         <div
-                            class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 bg-[#E5E5E5] bg-opacity-30 backdrop-blur-md mt-2 ml-2 float-left w-fit">
+                            class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 absolute bg-[#E5E5E5] bg-opacity-30 backdrop-blur-md mt-2 ml-2 float-left w-fit">
                             <img src="./dist/assets/icons/verified.svg" width="16" height="16" alt="verified">
                             <span class="text-xs">Dealer Terverifikasi</span>
                         </div>
@@ -111,12 +116,14 @@
 
                     <div class="card-hero">
                         <div
-                            class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 bg-[#E5E5E5] bg-opacity-30 backdrop-blur-md mt-2 ml-2 float-left w-fit">
-                            <img src="./dist/assets/icons/verified.svg" width="16" height="16" alt="verified">
+                            class="rounded-full p-[8px] flex text-white justify-items-center items-center gap-x-2 absolute bg-[#E5E5E5] bg-opacity-30 backdrop-blur-md mt-2 ml-2 float-left w-fit">
+                            <img src="./dist/assets/icons/verified.svg" alt="verified">
                             <span class="text-xs">Dealer Terverifikasi</span>
                         </div>
 
-                        <img src="./dist/assets/imgs/accord.png" class="mt-4 ml-4" alt="mercedez">
+                        <div class="w-full px-4 pt-4 mb-6">
+                            <img src="./dist/assets/imgs/accord.png" class="h-[179px]" alt="accord">
+                        </div>
 
                         <p class="w-2/3 pb-4 ml-4 text-lg font-medium leading-8 text-white clear-left">
                             2019 Honda Accord Sport/1.5t
@@ -124,7 +131,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col arrow-wrapper gap-y-8">
+                <div class="flex flex-col gap-y-8">
                     <div
                         class="p-3 from-[#303136] to-[#1e2127] bg-gradient-to-t rounded-full cursor-pointer base-hover">
                         <img src="./dist/assets/icons/arrow-up.svg" alt="arrowup">
@@ -136,51 +143,57 @@
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
+        <!-- Hero content end -->
     </section>
     <!-- Hero section end -->
 
 
     <!-- Section map start -->
     <section id="map" class="px-16">
+        <!-- Search button start -->
         <div class="w-full px-4 py-6 bg-black rounded-b-3xl h-[94px]">
             <a class="flex items-center justify-center base-hover" href="#">
                 <span class="text-xl font-bold text-white">Cari mobil</span>
                 <img src="./dist/assets/icons/search.svg" class="p-[13px]" alt="searchicon">
             </a>
         </div>
+        <!-- Search button end -->
 
-        <main
+        <div
             class="w-full h-[374px] bg-[url('./assets/icons/map-base.svg')] bg-cover bg-no-repeat bg-center mt-[120px] mb-[134px] flex justify-center items-center gap-[163px]">
-            <div class="text-wrapper">
+            <div>
                 <h1 class="font-semibold text-tertiary text-7xl">15K<span class="text-primary">+</span></h1>
                 <p class="text-[32px] text-[#8F9499]">Mobil Terjual</p>
             </div>
-            <div class="text-wrapper">
+            <div>
                 <h1 class="font-semibold text-tertiary text-7xl">20K<span class="text-primary">+</span></h1>
                 <p class="text-[32px] text-[#8F9499]">Pelanggan</p>
             </div>
-            <div class="text-wrapper">
+            <div>
                 <h1 class="font-semibold text-tertiary text-7xl">150<span class="text-primary">+</span></h1>
                 <p class="text-[32px] text-[#8F9499]">Brand</p>
             </div>
-        </main>
+        </div>
     </section>
     <!-- Section map end -->
 
     <!-- Section makas start -->
     <section id="mokas" class="px-16">
-        <div class="flex items-center justify-between w-full title-wrapper mb-[50px]">
+        <!-- Mokas title start -->
+        <div class="flex items-center justify-between w-full mb-[50px]">
             <h1 class="text-[44px] font-bold text-tertiary">Mokas Terpopuler</h1>
 
-            <a href=""
-                class="flex items-center text-xl font-bold gap-x-3 rounded-full border py-5 max-h-[60px] px-10 border-[#E7E7E9] hover:bg-[#E7E7E9]">
+            <a href="#"
+                class="flex items-center text-xl font-bold gap-x-3 rounded-full border py-5 max-h-[60px] px-10 border-[#E7E7E9] hover:bg-[#E7E7E937] transition duration-200">
                 <p>See all</p>
                 <img src="./dist/assets/icons/arrow-right.svg" alt="">
             </a>
         </div>
+        <!-- Mokas title start -->
 
-        <div class="card-container mb-[120px] flex justify-start flex-wrap w-full gap-x-[19.5px] gap-y-9">
+        <!-- Mokas card start -->
+        <div class="mb-[120px] flex justify-start flex-wrap w-full gap-x-[19.5px] gap-y-9">
             <div class="flex flex-col justify-between card">
                 <div class="card-content">
                     <div
@@ -215,7 +228,7 @@
                     </div>
 
                     <a href="#"
-                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white transition duration-200">
                         Negotiable
                     </a>
                 </div>
@@ -255,7 +268,7 @@
                     </div>
 
                     <a href="#"
-                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white transition duration-200">
                         Negotiable
                     </a>
                 </div>
@@ -295,7 +308,7 @@
                     </div>
 
                     <a href="#"
-                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white transition duration-200">
                         Negotiable
                     </a>
                 </div>
@@ -335,7 +348,7 @@
                     </div>
 
                     <a href="#"
-                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white transition duration-200">
                         Negotiable
                     </a>
                 </div>
@@ -375,7 +388,7 @@
                     </div>
 
                     <a href="#"
-                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white transition duration-200">
                         Negotiable
                     </a>
                 </div>
@@ -415,7 +428,7 @@
                     </div>
 
                     <a href="#"
-                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white transition duration-200">
                         Negotiable
                     </a>
                 </div>
@@ -455,7 +468,7 @@
                     </div>
 
                     <a href="#"
-                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white transition duration-200">
                         Negotiable
                     </a>
                 </div>
@@ -495,7 +508,7 @@
                     </div>
 
                     <a href="#"
-                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white transition duration-200">
                         Negotiable
                     </a>
                 </div>
@@ -535,32 +548,36 @@
                     </div>
 
                     <a href="#"
-                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                        class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white transition duration-200">
                         Negotiable
                     </a>
                 </div>
             </div>
         </div>
+        <!-- Mokas card start -->
         </div>
     </section>
     <!-- Section makas end -->
 
     <!-- Section dealer start -->
     <section id="dealer" class="p-16 bg-[#090B0F]">
-        <div class="flex items-center justify-between w-full mb-12 title-wrapper">
+        <!-- Dealer title start -->
+        <div class="flex items-center justify-between w-full mb-12">
             <h1 class="text-[44px] font-bold text-white">Dealer resmi dekat anda</h1>
 
-            <a href=""
-                class="flex items-center text-xl font-bold gap-x-3 rounded-full border py-5 max-h-[60px] px-10 border-[#E7E7E9] hover:bg-[#ffffff24] text-white">
+            <a href="#"
+                class="flex items-center text-xl font-bold gap-x-3 rounded-full border py-5 max-h-[60px] px-10 border-[#E7E7E937] hover:bg-[#E7E7E937] text-white transition duration-200 transition duration-200">
                 <p>See all</p>
                 <img src="./dist/assets/icons/arrow-right.svg" alt="">
             </a>
         </div>
+        <!-- Dealer title end -->
 
+        <!-- Dealer search start -->
         <div
             class="w-full h-[433px] rounded-[40px] bg-[url('./assets/imgs/Map.png')] bg-cover bg-no-repeat bg-center relative flex justify-center items-center mb-[153px]">
             <form
-                class="form-wrapper bg-[#22242A] py-6 w-[700px] flex justify-between items-center gap-x-3 pr-6 pl-[40px] rounded-full absolute bottom-[-50px]">
+                class="bg-[#22242A] py-6 w-[700px] flex justify-between items-center gap-x-3 pr-6 pl-[40px] rounded-full absolute bottom-[-50px]">
                 <input type="text" placeholder="Cari dealer di map"
                     class="bg-transparent text-2xl text-[#8F9498] outline-none border-none w-full">
                 <button class="bg-primary rounded-full p-[13px]">
@@ -568,8 +585,10 @@
                 </button>
             </form>
         </div>
+        <!-- Dealer search end -->
 
-        <div class="card-wrapper flex items-center gap-x-[21px] justify-evenly">
+        <!-- Dealer card start -->
+        <div class="flex items-center gap-x-[21px] justify-evenly">
             <div class="card-dealer">
                 <div class="w-full mb-3 card-img">
                     <img src="./dist/assets/imgs/hondadealer.png" class="m-auto" alt="hondadealer">
@@ -587,7 +606,7 @@
                 </div>
 
                 <a href="#"
-                    class="flex items-center justify-center w-full text-base font-bold gap-x-3 rounded-full border h-[50px] p-4 border-[#ededed37] hover:bg-[#ededed37] text-white">
+                    class="flex items-center justify-center w-full text-base font-bold gap-x-3 rounded-full border h-[50px] p-4 border-[#E7E7E937] hover:bg-[#E7E7E937] text-white transition duration-200">
                     <p>Cek Dealer</p>
                     <img src="./dist/assets/icons/arrow-right.svg" alt="">
                 </a>
@@ -610,7 +629,7 @@
                 </div>
 
                 <a href="#"
-                    class="flex items-center justify-center w-full text-base font-bold gap-x-3 rounded-full border h-[50px] p-4 border-[#ededed37] hover:bg-[#ededed37] text-white">
+                    class="flex items-center justify-center w-full text-base font-bold gap-x-3 rounded-full border h-[50px] p-4 border-[#E7E7E937] hover:bg-[#E7E7E937] text-white transition duration-200">
                     <p>Cek Dealer</p>
                     <img src="./dist/assets/icons/arrow-right.svg" alt="">
                 </a>
@@ -633,7 +652,7 @@
                 </div>
 
                 <a href="#"
-                    class="flex items-center justify-center w-full text-base font-bold gap-x-3 rounded-full border h-[50px] p-4 border-[#ededed37] hover:bg-[#ededed37] text-white">
+                    class="flex items-center justify-center w-full text-base font-bold gap-x-3 rounded-full border h-[50px] p-4 border-[#E7E7E937] hover:bg-[#E7E7E937] text-white transition duration-200">
                     <p>Cek Dealer</p>
                     <img src="./dist/assets/icons/arrow-right.svg" alt="">
                 </a>
@@ -656,23 +675,25 @@
                 </div>
 
                 <a href="#"
-                    class="flex items-center justify-center w-full text-base font-bold gap-x-3 rounded-full border h-[50px] p-4 border-[#ededed37] hover:bg-[#ededed37] text-white">
+                    class="flex items-center justify-center w-full text-base font-bold gap-x-3 rounded-full border h-[50px] p-4 border-[#E7E7E937] hover:bg-[#E7E7E937] text-white transition duration-200">
                     <p>Cek Dealer</p>
                     <img src="./dist/assets/icons/arrow-right.svg" alt="">
                 </a>
             </div>
         </div>
+        <!-- Dealer card end -->
     </section>
     <!-- Section dealer end -->
 
     <!-- Section rekomendasi start -->
     <section id="rekomendasi" class="my-[120px] pl-16">
-        <div class="flex items-center justify-between w-full pr-16 title-wrapper mb-9">
+        <!-- Rekomendasi title start -->
+        <div class="flex items-center justify-between w-full pr-16 mb-9">
             <h1 class="text-[44px] font-bold text-tertiary">Rekomendasi mobil baru</h1>
 
             <div class="flex gap-x-[32px] justify-between items-center ">
-                <a href=""
-                    class="flex items-center text-xl font-bold gap-x-3 rounded-full border py-5 max-h-[60px] px-10 border-[#E7E7E9] hover:bg-[#E7E7E9]">
+                <a href="#"
+                    class="flex items-center text-xl font-bold gap-x-3 rounded-full border py-5 max-h-[60px] px-10 border-[#E7E7E9] hover:bg-[#E7E7E937] transition duration-200">
                     <p>See all</p>
                     <img src="./dist/assets/icons/arrow-right.svg" alt="arrow">
                 </a>
@@ -688,8 +709,10 @@
                 </div>
             </div>
         </div>
+        <!-- Rekomendasi title end -->
 
-        <div class="overflow-x-scroll no-scrollbar cursor-grab">
+        <!-- Rekomendasi carousel start -->
+        <div class="overflow-x-scroll no-scrollbar">
             <div class="grid grid-flow-col grid-cols-4 gap-x-[21px] w-[1547px]">
                 <div class="flex flex-col justify-between card">
                     <div class="card-content">
@@ -725,7 +748,7 @@
                         </div>
 
                         <a href="#"
-                            class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                            class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white transition duration-200">
                             Negotiable
                         </a>
                     </div>
@@ -765,7 +788,7 @@
                         </div>
 
                         <a href="#"
-                            class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                            class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white transition duration-200">
                             Negotiable
                         </a>
                     </div>
@@ -805,7 +828,7 @@
                         </div>
 
                         <a href="#"
-                            class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                            class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white transition duration-200">
                             Negotiable
                         </a>
                     </div>
@@ -845,13 +868,14 @@
                         </div>
 
                         <a href="#"
-                            class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white">
+                            class="border-primary rounded-full border py-[6px] px-3 text-[10px] font-medium text-primary hover:bg-primary hover:text-white transition duration-200">
                             Negotiable
                         </a>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Rekomendasi carousel end -->
     </section>
     <!-- Section rekomendasi end -->
 
