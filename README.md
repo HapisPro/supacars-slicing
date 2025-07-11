@@ -28,3 +28,8 @@ supacars-slicing/
   ```bash
    npm install
   ```
+3. Jalankan Tailwind
+```bash
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+```
+4. Buka index.html di browser untuk melihat hasilnya.
