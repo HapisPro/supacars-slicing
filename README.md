@@ -16,3 +16,15 @@ supacars-slicing/
 - HTML5
 - Tailwind CSS
 - Node.js (untuk build Tailwind)
+
+## 🚀 Cara Menjalankan
+
+1. Clone repo:
+   ```bash
+   git clone https://github.com/alkausarhapis/supacars-slicing.git
+   cd supacars-slicing
+
+2. Install Dependency
+  ```bash
+   npm install
+  ```
