@@ -12,7 +12,7 @@ supacars-slicing/
 ├── tailwind.config.js # Konfigurasi Tailwind
 ├── package.json # Dependency dan script
 
-## 🔨 Teknologi yang Digunakan
+## ⚙️ Teknologi yang Digunakan
 - HTML5
 - Tailwind CSS
 - Node.js (untuk build Tailwind)
